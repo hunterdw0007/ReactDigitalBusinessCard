@@ -2,3 +2,57 @@
     box-sizing: border-box;
 }
 
+.card--border {
+    width: 550px;
+    height: 868px;
+    background: #23252C;
+    margin: 0;
+}
+
+.personal-photo
+{
+    width: 317px;
+    height: 317px;
+    margin: 44px 116px 0px 116px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card--inner {
+    width: 317px;
+    height: 399px;
+    margin: 0px 116px;
+    padding: 1px;
+    background-color: #1A1B21;
+}
+
+.card--name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.card--jobtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 15px;
+    text-align: center;
+    color: #F3BF99;
+    margin-top: 6px;
+}
+
+.card--footer {
+    width: 317px;
+    height: 64px;
+    margin: 0px 116px;
+    padding: 1px;
+    background: #161619;
+    border-radius: 0px 0px 10px 10px;
+}
