@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.card--border {
+body {
     background: #23252C;
 }
 
@@ -16,18 +16,14 @@
 }
 
 .card--inner {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     width: 317px;
     height: 399px;
     margin: 0px 116px;
     padding: 1px;
     background-color: #1A1B21;
-}
-
-.container
-{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
 }
 
 .card--name {
@@ -142,10 +138,22 @@
 }
 
 .card--footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     width: 317px;
     height: 64px;
-    margin: 0px 116px 44px;
+    margin: 0px 116px 44px 116px;
     padding: 1px;
     background: #161619;
     border-radius: 0px 0px 10px 10px;
+    gap: 24px;
+}
+
+.footer--icon {
+    width: 25px;
+    height: 25px;
+    color: #918E9B;
+    margin-top: 20px;
+    vertical-align: middle;
 }

@@ -384,42 +384,7 @@ if (process.env.NODE_ENV === 'production') {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = CardOuter;
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _CardInner = __webpack_require__(7);
-
-var _CardInner2 = _interopRequireDefault(_CardInner);
-
-var _CardFooter = __webpack_require__(6);
-
-var _CardFooter2 = _interopRequireDefault(_CardFooter);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function CardOuter() {
-    return _react2.default.createElement(
-        "main",
-        { className: "card--border" },
-        _react2.default.createElement("img", { className: "personal-photo", src: "./assets/IMG_2752.jpg" }),
-        _react2.default.createElement(_CardInner2.default, null),
-        _react2.default.createElement(_CardFooter2.default, null)
-    );
-}
-
-/***/ }),
+/* 4 */,
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -484,7 +449,14 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function CardFooter() {
-    return _react2.default.createElement("div", { className: "card--footer" });
+    return _react2.default.createElement(
+        "div",
+        { className: "card--footer" },
+        _react2.default.createElement("i", { className: "footer--icon fa-brands fa-xl fa-square-twitter" }),
+        _react2.default.createElement("i", { className: "footer--icon fa-brands fa-xl fa-square-facebook" }),
+        _react2.default.createElement("i", { className: "footer--icon fa-brands fa-xl fa-square-instagram" }),
+        _react2.default.createElement("i", { className: "footer--icon fa-brands fa-xl fa-square-github" })
+    );
 }
 
 /***/ }),
@@ -578,14 +550,24 @@ var _reactDom = __webpack_require__(5);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _CardOuter = __webpack_require__(4);
+var _CardInner = __webpack_require__(7);
 
-var _CardOuter2 = _interopRequireDefault(_CardOuter);
+var _CardInner2 = _interopRequireDefault(_CardInner);
+
+var _CardFooter = __webpack_require__(6);
+
+var _CardFooter2 = _interopRequireDefault(_CardFooter);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-    return _react2.default.createElement(_CardOuter2.default, null);
+    return _react2.default.createElement(
+        "main",
+        null,
+        _react2.default.createElement("img", { className: "personal-photo", src: "./assets/IMG_2752.jpg" }),
+        _react2.default.createElement(_CardInner2.default, null),
+        _react2.default.createElement(_CardFooter2.default, null)
+    );
 }
 
 _reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("root"));

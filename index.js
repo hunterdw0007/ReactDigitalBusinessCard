@@ -1,10 +1,15 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import CardOuter from "./components/CardOuter";
+import CardInner from "./components/CardInner"
+import CardFooter from "./components/CardFooter"
 
 function App() {
     return (
-        <CardOuter/>
+        <main>
+            <img className="personal-photo" src="./assets/IMG_2752.jpg"></img>
+            <CardInner/>
+            <CardFooter/>
+        </main>
     )
 }
 
