@@ -11,7 +11,7 @@ export default function CardInner() {
                 <a className="btn btn-light button--email" href="mailto:hwesterlund@proton.me">
                     <i className="fa fa-envelope"></i> Email
                 </a>
-                <a className="btn btn-primary button--linkedin" href="#">
+                <a className="btn btn-primary button--linkedin" href="https://www.linkedin.com/in/hunter-westerlund-51707a185/">
                     <i class="fa-brands fa-linkedin"></i> LinkedIn
                 </a>
             </div>

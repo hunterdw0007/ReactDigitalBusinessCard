@@ -141,6 +141,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    align-items: center;
     width: 317px;
     height: 64px;
     margin: 0px 116px 44px 116px;
@@ -151,9 +152,5 @@ body {
 }
 
 .footer--icon {
-    width: 25px;
-    height: 25px;
     color: #918E9B;
-    margin-top: 20px;
-    vertical-align: middle;
 }
