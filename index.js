@@ -4,9 +4,7 @@ import CardOuter from "./components/CardOuter";
 
 function App() {
     return (
-        <div className="card--border">
-            <CardOuter/>
-        </div>
+        <CardOuter/>
     )
 }
 

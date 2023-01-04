@@ -4,7 +4,7 @@ import CardFooter from "./CardFooter"
 
 export default function CardOuter() {
     return (
-        <main>
+        <main className="card--border">
             <img className="personal-photo" src="./assets/IMG_2752.jpg"></img>
             <CardInner/>
             <CardFooter/>
