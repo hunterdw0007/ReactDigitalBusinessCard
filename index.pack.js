@@ -404,11 +404,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function CardFooter() {
     return _react2.default.createElement(
         "div",
-        { className: "card--footer" },
-        _react2.default.createElement("i", { className: "footer--icon fa-brands fa-2xl fa-square-twitter" }),
-        _react2.default.createElement("i", { className: "footer--icon fa-brands fa-2xl fa-square-facebook" }),
-        _react2.default.createElement("i", { className: "footer--icon fa-brands fa-2xl fa-square-instagram" }),
-        _react2.default.createElement("i", { className: "footer--icon fa-brands fa-2xl fa-square-github" })
+        { className: "card--footer col-lg-4 col-sm-9" },
+        _react2.default.createElement("img", { className: "footer--image", src: "../assets/c-sharp-c-logo.png" }),
+        _react2.default.createElement("img", { className: "footer--image", src: "../assets/cpp_logo.png" }),
+        _react2.default.createElement("img", { className: "footer--image", src: "../assets/python-logo.png" }),
+        _react2.default.createElement("i", { className: "footer--icon fa-brands fa-3x fa-react" }),
+        _react2.default.createElement("i", { className: "footer--icon fa-brands fa-3x fa-rust" }),
+        _react2.default.createElement("img", { className: "footer--image", src: "../assets/tux-logo-border.png" })
     );
 }
 
@@ -433,7 +435,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function CardInner() {
     return _react2.default.createElement(
         "div",
-        { className: "card--inner container" },
+        { className: "card--inner col-lg-4 col-sm-9" },
         _react2.default.createElement(
             "h1",
             { className: "card--name " },
@@ -454,9 +456,9 @@ function CardInner() {
             { className: "card--buttons" },
             _react2.default.createElement(
                 "a",
-                { className: "btn btn-light button--email", href: "mailto:hwesterlund@proton.me" },
-                _react2.default.createElement("i", { className: "fa fa-envelope" }),
-                " Email"
+                { className: "btn btn-light button--email", href: "https://github.com/hunterdw0007" },
+                _react2.default.createElement("i", { className: "fa-brands fa-github" }),
+                " GitHub"
             ),
             _react2.default.createElement(
                 "a",
@@ -465,6 +467,7 @@ function CardInner() {
                 " LinkedIn"
             )
         ),
+        _react2.default.createElement("hr", null),
         _react2.default.createElement(
             "h5",
             { className: "card--section" },
@@ -473,7 +476,7 @@ function CardInner() {
         _react2.default.createElement(
             "p",
             { className: "card--text" },
-            "I am a recent graduate of Auburn University. I want to get a job doing .NET development as well as React so I am taking this course."
+            "Auburn University class of '22. Interested in full-stack development. I have experience with .NET and I am learning React and Rust."
         ),
         _react2.default.createElement(
             "h5",
@@ -483,7 +486,7 @@ function CardInner() {
         _react2.default.createElement(
             "p",
             { className: "card--text" },
-            "Being outdoors. Living healthy. Vinyl records. FOSS advocate."
+            "If I'm not staring at code I'm usually outside or working on my Jeep. I like collecting vinyl records and LEGO. I enjoy reading classics and ancient history."
         )
     );
 }
@@ -563,7 +566,7 @@ function App() {
     return _react2.default.createElement(
         "main",
         null,
-        _react2.default.createElement("img", { className: "personal-photo", src: "./assets/IMG_2752.jpg" }),
+        _react2.default.createElement("img", { className: "personal-photo col-lg-4 col-sm-9", src: "./assets/IMG_2752.jpg" }),
         _react2.default.createElement(_CardInner2.default, null),
         _react2.default.createElement(_CardFooter2.default, null)
     );

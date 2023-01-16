@@ -6,7 +6,7 @@ import CardFooter from "./components/CardFooter"
 function App() {
     return (
         <main>
-            <img className="personal-photo" src="./assets/IMG_2752.jpg"></img>
+            <img className="personal-photo col-lg-4 col-sm-9" src="./assets/IMG_2752.jpg"></img>
             <CardInner/>
             <CardFooter/>
         </main>
